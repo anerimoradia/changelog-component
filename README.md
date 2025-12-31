@@ -21,18 +21,49 @@ https://roadmap.sh/projects/changelog-component
 ## Project Structure
 changelog-component/
 │
-├── index.html        # Main HTML file containing the timeline structure
-├── style.css         # CSS file with layout, timeline, and responsive styling
-└── README.md         # Project documentation
+
+├── index.html 
+
+├── style.css
+
+└── README.md        
 
 ## Takeaways
-<b>1. CSS Positioning</b>
-<li>Using <code>position: absolute</code> and <code>position: relative</code> effectively</li><li>Centering elements using <code>left: 50%</code> and <code>transform: translateX(-50%)</code></li><li>Anchoring dots to a vertical timeline</li>
-<b>2. Layout Techniques</b>
-<li>Alternating left–right alignment using <code>nth-child</code></li><li>Using margins to push content to opposite sides</li><li>Creating a clean vertical timeline UI</li>
-<b>3. Responsive Design</b>
-<li>Stacking timeline items on smaller screens</li><li>Shifting the vertical line and dot for mobile</li>
-<b>4. Semantic HTML Structure</b>
-<li>Using <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> for timeline entries</li><li>Grouping content inside a <code>.content</code> wrapper for layout control</li>
-<b>5. Clean UI Practices</b>
-<li>Consistent spacing and typography</li><li>Soft shadows and rounded corners</li><li>Readable and accessible layout</li>
+<ol>
+  <li><b>CSS Positioning</b>
+    <ul>
+      <li>Using <code>position: absolute</code> and <code>position: relative</code> effectively</li>
+      <li>Centering elements using <code>left: 50%</code> and <code>transform: translateX(-50%)</code></li>
+      <li>Anchoring dots to a vertical timeline</li>
+    </ul>
+  </li>
+  <li><b>Layout Techniques</b>
+    <ul>
+      <li>Alternating left–right alignment using <code>nth-child</code></li>
+      <li>Using margins to push content to opposite sides</li><li>Creating a clean vertical timeline UI</li>
+    </ul>
+  </li>
+  <li><b>Responsive Design</b>
+    <ul>
+      <li>Stacking timeline items on smaller screens</li>
+      <li>Shifting the vertical line and dot for mobile</li>
+    </ul>
+  </li>
+  <li><b>Semantic HTML Structure</b>
+    <ul>
+      <li>Using <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> for timeline entries</li>
+      <li>Grouping content inside a <code>.content</code> wrapper for layout control</li>  
+    </ul>
+  </li>
+  <li>
+    <b>Clean UI Practices</b>
+    <ul>
+      <li>Consistent spacing and typography</li>
+      <li>Soft shadows and rounded corners</li>
+      <li>Readable and accessible layout</li>
+    </ul>
+  </li>
+</ol>
+
+
+
