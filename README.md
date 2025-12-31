@@ -25,7 +25,7 @@ changelog-component/
 ├── style.css         # CSS file with layout, timeline, and responsive styling
 └── README.md         # Project documentation
 
-#Takeaways
+## Takeaways
 <b>1. CSS Positioning</b>
 <li>Using <code>position: absolute</code> and <code>position: relative</code> effectively</li><li>Centering elements using <code>left: 50%</code> and <code>transform: translateX(-50%)</code></li><li>Anchoring dots to a vertical timeline</li>
 <b>2. Layout Techniques</b>
