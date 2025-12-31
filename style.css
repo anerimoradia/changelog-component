@@ -29,6 +29,7 @@
   position: relative;
 }
 
+/* Center vertical line */
 .timeline::before {
   content: "";
   position: absolute;
@@ -43,23 +44,11 @@
 /* Each item */
 .timeline li {
   position: relative;
-  width: 50%;
-  padding: 2rem 2rem;
+  width: 100%;
+  padding: 2rem 0;
 }
 
-/* Left side items */
-.timeline li:nth-child(odd) {
-  left: 0;
-  text-align: right;
-}
-
-/* Right side items */
-.timeline li:nth-child(even) {
-  left: 50%;
-  text-align: left;
-}
-
-/* Dot stays centered */
+/* Dot stays centered on the line */
 .timeline .dot {
   position: absolute;
   left: 50%;
@@ -69,11 +58,28 @@
   height: 16px;
   background: #000;
   border-radius: 50%;
+  z-index: 2;
 }
 
-/* Date and update text */
+/* Content box */
+.timeline .content {
+  width: 45%;
+}
+
+/* Left side items */
+.timeline li:nth-child(odd) .content {
+  text-align: right;
+  margin-right: auto;
+}
+
+/* Right side items */
+.timeline li:nth-child(even) .content {
+  text-align: left;
+  margin-left: auto;
+}
+
+/* Text styling */
 .date {
-  display: block;
   font-weight: bold;
   margin-bottom: 0.3rem;
   color: #222;
@@ -82,7 +88,6 @@
 .update {
   color: #444;
   line-height: 1.4;
-  margin-top: 0.3rem;
 }
 
 /* --- Button Styling --- */
@@ -109,14 +114,17 @@
   }
 
   .timeline li {
-    width: 100%;
-    left: 0 !important;
     padding-left: 50px;
-    text-align: left !important;
   }
 
   .timeline .dot {
     left: 20px;
     transform: translateX(-50%);
+  }
+
+  .timeline .content {
+    width: 100%;
+    text-align: left !important;
+    margin: 0 !important;
   }
 }
